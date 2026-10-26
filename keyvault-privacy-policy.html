@@ -1,0 +1,1334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>KeyVault — Privacy Policy, Terms &amp; FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f4f6f4;
+        --surface: #ffffff;
+        --track: #e6eae8;
+        --border: #d5dbd8;
+        --divider: #edf0ee;
+        --text: #14211f;
+        --muted: #5a6663;
+        --primary: #0f6b5c;
+        --primary-ink: #0f6b5c;
+        --tint: #e3f1ee;
+        --tint-text: #0f4f44;
+        --danger: #8c2f4a;
+        --mint: #8fe3cf;
+        --code-bg: #eef3f1;
+        --shadow: 0 1px 2px rgba(20, 33, 31, 0.05), 0 8px 24px rgba(20, 33, 31, 0.06);
+        --nav-bg: rgba(244, 246, 244, 0.88);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1716;
+          --surface: #18221f;
+          --track: #202c29;
+          --border: #2c3a36;
+          --divider: #26332f;
+          --text: #e8efec;
+          --muted: #9aaaa5;
+          --primary: #0f6b5c;
+          --primary-ink: #5fd3bc;
+          --tint: #143a33;
+          --tint-text: #bfe9df;
+          --danger: #f0a0b8;
+          --code-bg: #202c29;
+          --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+          --nav-bg: rgba(15, 23, 22, 0.88);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 16.5px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      ::selection { background: var(--tint); color: var(--tint-text); }
+
+      /* ---------- Header ---------- */
+      .hero {
+        background: var(--primary);
+        color: #fff;
+        padding: 44px 20px 38px;
+      }
+      .hero-inner { max-width: 780px; margin: 0 auto; }
+      .brand-row { display: flex; align-items: center; gap: 14px; }
+      .brand-mark {
+        flex: 0 0 auto;
+        width: 52px; height: 52px;
+        border-radius: 14px;
+        overflow: hidden;
+        display: grid; place-items: center;
+      }
+      .brand-mark svg { width: 52px; height: 52px; display: block; }
+      .brand-name { font-size: 30px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; }
+      .brand-sub { font-size: 14.5px; opacity: 0.9; font-weight: 600; }
+      .hero h1 {
+        margin: 26px 0 8px;
+        font-size: clamp(26px, 5.5vw, 36px);
+        line-height: 1.15;
+        font-weight: 800;
+        letter-spacing: -0.015em;
+      }
+      .hero .lede { margin: 0; font-size: 17px; opacity: 0.94; max-width: 60ch; }
+      .hero-meta {
+        margin-top: 22px;
+        display: flex; flex-wrap: wrap; gap: 8px 22px;
+        font-size: 14px; font-weight: 600; opacity: 0.95;
+      }
+      .hero-meta span b { font-weight: 800; }
+
+      /* ---------- Section nav ---------- */
+      .section-nav {
+        position: sticky; top: 0; z-index: 20;
+        background: var(--nav-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--divider);
+      }
+      .section-nav-inner {
+        max-width: 780px; margin: 0 auto; padding: 10px 20px;
+        display: flex; gap: 8px;
+      }
+      .section-nav a {
+        flex: 1;
+        text-align: center;
+        text-decoration: none;
+        color: var(--muted);
+        font-weight: 700; font-size: 14.5px;
+        padding: 9px 10px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        transition: color 0.15s, background 0.15s, border-color 0.15s;
+      }
+      .section-nav a:hover { color: var(--text); }
+      .section-nav a.active {
+        background: var(--primary);
+        color: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        .section-nav a.active { background: var(--tint); color: var(--tint-text); }
+      }
+
+      /* ---------- Layout ---------- */
+      main { max-width: 780px; margin: 0 auto; padding: 8px 20px 64px; }
+      section.doc { padding-top: 40px; scroll-margin-top: 76px; }
+      section.doc + section.doc { border-top: 1px solid var(--divider); margin-top: 16px; }
+      .doc-head { margin-bottom: 6px; }
+      .doc-head h2 {
+        margin: 0 0 4px;
+        font-size: clamp(24px, 4.5vw, 30px);
+        font-weight: 800; letter-spacing: -0.015em; line-height: 1.2;
+      }
+      .doc-head p { margin: 0; color: var(--muted); font-size: 15px; font-weight: 600; }
+      h3 {
+        margin: 30px 0 8px;
+        font-size: 19px; font-weight: 700; letter-spacing: -0.005em;
+      }
+      h3 .no { color: var(--primary-ink); margin-right: 8px; }
+      p { margin: 0 0 12px; }
+      ul, ol { margin: 0 0 14px; padding-left: 22px; }
+      li { margin-bottom: 6px; }
+      li::marker { color: var(--primary-ink); font-weight: 700; }
+      a { color: var(--primary-ink); font-weight: 600; }
+      strong { font-weight: 700; }
+      code, .mono {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.88em;
+        background: var(--code-bg);
+        padding: 1px 6px; border-radius: 6px;
+        overflow-wrap: anywhere;
+      }
+
+      /* ---------- At-a-glance strip ---------- */
+      .glance {
+        margin: 26px 0 6px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        padding: 20px 22px;
+      }
+      .glance h3 { margin: 0 0 12px; font-size: 16px; }
+      .glance-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px 26px;
+      }
+      .glance-item { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; }
+      .glance-item svg { flex: 0 0 auto; width: 20px; height: 20px; margin-top: 2px; color: var(--primary-ink); }
+      .glance-item b { display: block; font-weight: 700; line-height: 1.35; }
+      .glance-item span { color: var(--muted); font-size: 14px; line-height: 1.45; display: block; }
+
+      .callout {
+        background: var(--tint);
+        color: var(--tint-text);
+        border-radius: 14px;
+        padding: 14px 18px;
+        margin: 16px 0;
+        font-size: 15.5px;
+      }
+      .callout p { margin: 0; }
+      .callout strong { font-weight: 800; }
+
+      /* ---------- FAQ ---------- */
+      .faq-group { margin-top: 28px; }
+      .faq-group > h3 { margin-top: 0; display: flex; align-items: baseline; gap: 10px; }
+      .faq-group > h3 .count { color: var(--muted); font-size: 13.5px; font-weight: 600; }
+      details.faq {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+      details.faq summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 15px 46px 15px 18px;
+        font-weight: 700; font-size: 16px; line-height: 1.4;
+        position: relative;
+        -webkit-tap-highlight-color: transparent;
+      }
+      details.faq summary::-webkit-details-marker { display: none; }
+      details.faq summary::after {
+        content: "";
+        position: absolute; right: 18px; top: 50%;
+        width: 9px; height: 9px;
+        border-right: 2.5px solid var(--primary-ink);
+        border-bottom: 2.5px solid var(--primary-ink);
+        transform: translateY(-70%) rotate(45deg);
+        transition: transform 0.18s ease;
+      }
+      details.faq[open ] summary::after { transform: translateY(-30%) rotate(225deg); }
+      details.faq summary:hover { color: var(--primary-ink); }
+      details.faq .answer { padding: 0 18px 16px; color: var(--text); font-size: 15.5px; }
+      details.faq .answer p:last-child, details.faq .answer ul:last-child { margin-bottom: 0; }
+      .faq-tools { display: flex; gap: 10px; margin: 18px 0 4px; }
+      .faq-tools button {
+        font: inherit; font-size: 14px; font-weight: 700;
+        color: var(--primary-ink);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+      .faq-tools button:hover { border-color: var(--primary-ink); }
+
+      /* ---------- FAQ search ---------- */
+      [hidden] { display: none !important; }
+      .faq-search { margin: 18px 0 0; position: relative; }
+      .faq-search svg {
+        position: absolute; left: 15px; top: 50%;
+        transform: translateY(-50%);
+        width: 18px; height: 18px;
+        color: var(--muted);
+        pointer-events: none;
+      }
+      .faq-search input {
+        width: 100%;
+        font: inherit; font-size: 16px;
+        color: var(--text);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 12px 16px 12px 44px;
+        -webkit-appearance: none; appearance: none;
+      }
+      .faq-search input::placeholder { color: var(--muted); }
+      .faq-search input:focus {
+        outline: none;
+        border-color: var(--primary-ink);
+        box-shadow: 0 0 0 3px var(--tint);
+      }
+      .faq-noresults {
+        margin: 26px 0 6px;
+        text-align: center;
+        color: var(--muted);
+        font-weight: 600;
+        font-size: 15.5px;
+      }
+
+      /* ---------- Footer ---------- */
+      footer {
+        border-top: 1px solid var(--divider);
+        margin-top: 8px;
+      }
+      .footer-inner {
+        max-width: 780px; margin: 0 auto; padding: 26px 20px 44px;
+        color: var(--muted); font-size: 14.5px;
+      }
+      .footer-inner p { margin: 0 0 6px; }
+      .footer-inner .brand-line { color: var(--text); font-weight: 800; font-size: 15.5px; }
+
+      @media (max-width: 520px) {
+        body { font-size: 16px; }
+        .hero { padding: 34px 18px 30px; }
+        main { padding-left: 18px; padding-right: 18px; }
+        .section-nav-inner { padding-left: 14px; padding-right: 14px; }
+        .section-nav a { font-size: 13.5px; padding: 8px 6px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        details.faq summary::after { transition: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="brand-row">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <rect width="100" height="100" rx="24" fill="#0F6B5C" />
+              <polygon points="50,14 86,50 50,86 14,50" fill="#FFFFFF" />
+              <circle cx="50" cy="44" r="8" fill="#0F6B5C" />
+              <rect x="47" y="48" width="6" height="18" rx="3" fill="#0F6B5C" />
+            </svg>
+          </div>
+          <div>
+            <div class="brand-name">KeyVault</div>
+            <div class="brand-sub">by Zetro Labs</div>
+          </div>
+        </div>
+        <h1>Privacy Policy, Terms &amp; FAQ</h1>
+        <p class="lede">
+          KeyVault is built on a simple promise: your passwords are yours alone. Everything is
+          encrypted on your phone, there is no account and no server, and we could not read your
+          vault even if we wanted to. This page explains exactly how that works, the terms that
+          govern your use of the app, and answers to questions about every part of it. KeyVault was
+          created by Zetro Labs and is an exclusive product of Zetro Labs; Zetro Labs retains all
+          rights and authority over the app.
+        </p>
+        <div class="hero-meta">
+          <span>App version <b>2.2.3</b></span>
+          <span>Package <b>com.zetrolabs.keyvault</b></span>
+          <span>Effective <b>20 October 2026</b></span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="section-nav" aria-label="Page sections">
+      <div class="section-nav-inner">
+        <a href="#privacy" data-spy="privacy">Privacy Policy</a>
+        <a href="#terms" data-spy="terms">Terms &amp; Conditions</a>
+        <a href="#faq" data-spy="faq">FAQ</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ================= PRIVACY POLICY ================= -->
+      <section class="doc" id="privacy">
+        <div class="doc-head">
+          <h2>Privacy Policy</h2>
+          <p>Last updated: 26 October 2026 · Applies to KeyVault for Android by Zetro Labs</p>
+        </div>
+
+        <div class="glance" aria-label="Privacy at a glance">
+          <h3>Privacy at a glance</h3>
+          <div class="glance-grid">
+            <div class="glance-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <div><b>Encrypted on your device</b><span>Vault data is encrypted with AES-256-GCM before it is stored.</span></div>
+            </div>
+            <div class="glance-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+              <div><b>No account, ever</b><span>KeyVault never asks for your name, email, or phone number.</span></div>
+            </div>
+            <div class="glance-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3l18 18"/><path d="M10.6 5.1A10 10 0 0 1 21 12a10.8 10.8 0 0 1-2.9 3.7M6.6 6.6A10.8 10.8 0 0 0 3 12a10 10 0 0 0 11.5 4.9"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+              <div><b>No tracking or analytics</b><span>No usage data, no crash reports, no advertising — nothing is collected.</span></div>
+            </div>
+            <div class="glance-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 18a8 8 0 1 1 2.3-14.8"/><path d="M4 4v5h5"/></svg>
+              <div><b>Works fully offline</b><span>Your vault needs no connection. Internet features run only when you choose to use them.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h3><span class="no">1</span>Who we are</h3>
+        <p>
+          KeyVault (“the app”) was created by <strong>Zetro Labs</strong> (“we”, “us”) and is
+          developed and published by Zetro Labs. KeyVault is an <strong>exclusive product of
+          Zetro Labs</strong> — Zetro Labs retains all rights and authority over the app, its
+          name, and its design. Any legal issues arising in connection with KeyVault are subject
+          to the jurisdiction of the Indian judiciary (the courts of India); see Section 13.
+          KeyVault is a password manager for Android that stores passwords, passkeys, and
+          passcodes in an encrypted vault that exists only on your device. This policy describes
+          what information the app handles and — just as importantly — what it never touches.
+        </p>
+
+        <h3><span class="no">2</span>Information we collect: none</h3>
+        <p>
+          Zetro Labs does not collect, receive, store, or have access to any personal information
+          from KeyVault users. Specifically:
+        </p>
+        <ul>
+          <li><strong>No account or registration.</strong> There is nothing to sign up for and no sign-in.</li>
+          <li><strong>No Zetro Labs servers.</strong> The app does not send your data to us — there is no server for it to go to.</li>
+          <li><strong>No analytics or usage statistics.</strong> We do not know how many entries you store, which features you use, or how often you open the app.</li>
+          <li><strong>No advertising and no trackers.</strong> The app contains no ad networks, no tracking SDKs, and no third-party analytics libraries.</li>
+          <li><strong>No crash or diagnostic reporting</strong> is sent to us.</li>
+        </ul>
+        <p>
+          Because we collect nothing, there is nothing for us to sell, share, rent, or disclose.
+          We cannot produce your data in response to any request, because we never have it.
+        </p>
+
+        <h3><span class="no">3</span>Your vault data</h3>
+        <p>
+          Everything you save in KeyVault — entries, usernames, passwords, website addresses,
+          notes, attached files, passcodes, two-factor (2FA/TOTP) secrets, favourites, and
+          passkey records — is stored
+          <strong>only on your device</strong>, inside an encrypted vault:
+        </p>
+        <p>
+          If you use multi-device sync, the names of your synced devices and a short sync
+          activity log are kept inside the same encrypted vault. So Android can offer your
+          passkeys at sign-in, a small index of passkey site and account names is also kept on
+          the device; it holds no keys or passwords and never leaves your phone.
+        </p>
+        <ul>
+          <li>Data is encrypted with <strong>AES-256-GCM</strong>, an authenticated encryption standard, before it is written to storage.</li>
+          <li>The encryption key is derived from your master password using <strong>PBKDF2-HMAC-SHA256 with 600,000 iterations</strong>, which makes brute-force guessing extremely expensive.</li>
+          <li><strong>Your master password never leaves your device</strong> and is never known to us. It is not stored in plain text.</li>
+          <li>When the app is locked or sent to the background, decrypted vault data is cleared from memory. The app always opens on the lock screen first.</li>
+          <li><strong>Notes and attachments.</strong> Passwords and passcodes can carry notes and attached files (any file type, up to 10 MB each), and a saved passkey can carry a note and files added from its detail view. Attachments are stored <strong>only inside the encrypted vault</strong> on your device — and, if you enable backup or sync, inside your own encrypted backups. They are never uploaded anywhere by Zetro Labs.</li>
+        </ul>
+        <div class="callout">
+          <p>
+            <strong>The honest trade-off of zero-knowledge design:</strong> because we never see
+            your master password, we cannot reset it or recover your vault for you. If you forget
+            your master password and have not saved your Emergency Access recovery kit, your data
+            cannot be recovered — by anyone. See the FAQ for how Emergency Access works.
+          </p>
+        </div>
+
+        <h3><span class="no">4</span>Biometric unlock</h3>
+        <p>
+          If you enable fingerprint unlock, the key that unwraps your vault is protected by the
+          <strong>Android Keystore</strong> and released only after Android verifies your
+          fingerprint. Your fingerprint data itself is handled entirely by Android and your
+          device hardware — KeyVault never receives, sees, or stores your biometric data.
+        </p>
+
+        <h3><span class="no">5</span>Optional Google Drive backup</h3>
+        <p>
+          KeyVault can optionally back up your vault to <strong>your own Google Drive</strong>.
+          This is off by default and happens only if you link your Google account and use the
+          backup, restore, or sync features in Settings.
+        </p>
+        <ul>
+          <li>The backup is stored in Drive’s hidden <strong>app data folder</strong> using the <code>drive.appdata</code> permission scope. KeyVault can access only its own app folder — it cannot see, read, or modify any of your other Drive files.</li>
+          <li>The vault is <strong>encrypted on your device before anything is uploaded</strong>. What sits on Google Drive is an encrypted file that only your master password can open. Google cannot read it, and neither can we.</li>
+          <li>Zetro Labs has no access to your Google account or your Drive. Linking uses Google’s own sign-in flow, and you can unlink at any time in Settings.</li>
+          <li>You can delete the backup at any time by unlinking and removing the app data from your Google Drive settings.</li>
+        </ul>
+        <p>
+          Google’s handling of your account and Drive storage is governed by Google’s own privacy
+          policy and terms.
+        </p>
+
+        <h3><span class="no">6</span>Breach checks (Have I Been Pwned)</h3>
+        <p>
+          The Security tab can check whether your passwords appear in known data breaches, using
+          the <strong>Have I Been Pwned (HIBP)</strong> service and its
+          <strong>k-anonymity</strong> model, designed so your passwords are never exposed:
+        </p>
+        <ul>
+          <li>Your password is hashed with SHA-1 <strong>on your device</strong>.</li>
+          <li>Only the <strong>first 5 characters</strong> of that hash leave your device. HIBP returns every known hash beginning with those 5 characters, and your device compares the full hash locally.</li>
+          <li>Your actual password and its full hash are <strong>never transmitted</strong>. HIBP cannot identify you or your password from a 5-character prefix — the same prefix is shared by enormous numbers of passwords worldwide.</li>
+          <li>Breach checks need an internet connection (see Section 8). HIBP returns match counts only; by design, it cannot say which company leaked a given password.</li>
+        </ul>
+
+        <h3><span class="no">7</span>Passkeys and Autofill</h3>
+        <p>
+          On Android 14 and later, KeyVault can act as a passkey provider and an Autofill service.
+          Passkeys you create are stored inside your encrypted vault like everything else. When
+          you sign in to a website or app, Android’s system picker handles the ceremony; the
+          passkey is used on your device and only the cryptographic proof — never the private
+          key — is shared with the site you are signing in to. KeyVault sends no information
+          about your passkeys or sign-ins to Zetro Labs or anyone else. A saved passkey’s detail
+          view also offers quick Add/Edit note and Attach file actions — no full edit needed;
+          those notes and files are stored encrypted in your vault, tied to that passkey.
+        </p>
+
+        <h3><span class="no">8</span>Internet access</h3>
+        <p>
+          KeyVault has no servers, no accounts, no ads, no analytics and no tracking, and your
+          vault works fully offline. The app uses the internet only for features you choose to
+          use: Google Drive backup, sync and restore; breach checks; opening websites from an
+          item’s detail view; and fetching website icons (favicons) from Google’s favicon service
+          when you open the Website picker — only the site’s domain name is involved in that icon
+          lookup, never your data. Your vault contents leave the device only in encrypted form
+          (Drive backups and sync), as a 5-character hash prefix (breach checks), or when you open
+          a website yourself. If you set Breach checks to Automatic in Settings, a breach check
+          also runs on its own when you unlock the app, at most once a day.
+        </p>
+        <p>
+          If you use Local sync, your phones connect directly to each other over your own Wi-Fi.
+          Nothing passes through Google, Zetro Labs or any server. The same encrypted sync data
+          travels phone-to-phone over a connection protected by a code you confirm on both phones.
+        </p>
+
+        <h3><span class="no">9</span>Permissions</h3>
+        <p>KeyVault requests only the Android permissions its features genuinely need:</p>
+        <ul>
+          <li><strong>Internet</strong> — used only for the features listed in Section 8.</li>
+          <li><strong>Biometric / fingerprint</strong> — only if you enable fingerprint unlock.</li>
+          <li><strong>File access through Android’s system picker</strong> — when you export a backup or import a Chrome password CSV, you choose the file or folder yourself. KeyVault does not browse your storage. (Importing a backup needs no picker: it restores the most recent backup in your Download/KeyVault folder automatically.)</li>
+          <li><strong>Installed apps (read locally only)</strong> — the Add Item “App” picker reads the names and icons of the apps installed on your phone, on the device only, so you can pick one to fill in an entry. Nothing about your installed apps is transmitted, and nothing is stored anywhere outside the entry you create.</li>
+          <li><strong>Camera (on-device only, when you tap Scan)</strong> — KeyVault can use your camera for one purpose only: scanning a QR code when you tap Scan — a recovery-kit code on the recovery screen, or a two-factor (2FA/TOTP) setup code while adding or editing an entry. Scanning happens entirely on your device; no image is stored, transmitted, or seen by Zetro Labs, and the camera is never used at any other time.</li>
+          <li><strong>Nearby devices (Android 13 and later)</strong> — used only to find and connect to your other phone for Local sync, when you start it. KeyVault never uses it to learn your location.</li>
+        </ul>
+        <p>KeyVault does not request access to your contacts, location, microphone, call logs, or messages, and it never will for its core features.</p>
+
+        <h3><span class="no">10</span>Data retention and deletion</h3>
+        <ul>
+          <li>Your vault lives on your device for as long as you keep it. Deleting an entry deletes it from the vault.</li>
+          <li><strong>Settings → Danger zone → Erase everything</strong> permanently deletes your local vault after a two-step confirmation.</li>
+          <li>Uninstalling the app removes the local vault and app data from the device.</li>
+          <li>If you used Google Drive backup, the encrypted backup or sync data in Drive’s app data folder is separate — delete it from your Google Drive settings or by unlinking and clearing the app data, since uninstalling cannot reach it.</li>
+          <li>Local backup files you exported (for example to your Download/KeyVault folder) are ordinary files under your control; delete them like any other file.</li>
+        </ul>
+
+        <h3><span class="no">11</span>Children’s privacy</h3>
+        <p>
+          KeyVault is a general-purpose utility and is not directed at children under 13. Because
+          the app collects no personal information from anyone, it collects none from children
+          either.
+        </p>
+
+        <h3><span class="no">12</span>Changes to this policy</h3>
+        <p>
+          If this policy changes, the updated version will be posted on this page with a new
+          “Last updated” date, and significant changes will be noted in the app’s release notes.
+          Because we hold no contact details for users, we cannot notify you directly — the page
+          you are reading is the canonical version.
+        </p>
+
+        <h3><span class="no">13</span>Ownership and governing law</h3>
+        <p>
+          KeyVault was created by <strong>Zetro Labs</strong> and is an exclusive product of
+          Zetro Labs. Zetro Labs retains all rights and authority over the app. Any legal issues
+          arising in connection with KeyVault or this policy will be subject to the jurisdiction
+          of the Indian judiciary (the courts of India).
+        </p>
+
+        <h3><span class="no">14</span>Contact</h3>
+        <p>
+          Questions about this policy or about KeyVault’s privacy practices can be sent to
+          <strong>Zetro Labs</strong> through the developer contact listed on KeyVault’s Google
+          Play store page. Since the app collects no data, most questions are answered by the
+          design itself — but we are happy to explain it further.
+        </p>
+      </section>
+
+      <!-- ================= TERMS & CONDITIONS ================= -->
+      <section class="doc" id="terms">
+        <div class="doc-head">
+          <h2>Terms &amp; Conditions</h2>
+          <p>Last updated: 24 October 2026 · Between you and Zetro Labs</p>
+        </div>
+
+        <p>
+          These Terms &amp; Conditions (“Terms”) govern your use of KeyVault (“the app”), provided
+          by Zetro Labs (“we”, “us”). KeyVault was created by Zetro Labs and is an exclusive
+          product of Zetro Labs; Zetro Labs retains all rights and authority over the app. By
+          installing or using KeyVault, you agree to these Terms.
+          If you do not agree, please do not use the app.
+        </p>
+
+        <h3><span class="no">1</span>What KeyVault is</h3>
+        <p>
+          KeyVault is an on-device password manager. It stores your passwords, passkeys,
+          passcodes, and two-factor (2FA/TOTP) secrets in a vault encrypted on your device with
+          a master password that only you know.
+          KeyVault is provided free of charge, with no account and no server component operated by
+          Zetro Labs. Entries can include notes and attached files (any file type, up to 10 MB
+          each), stored inside the same encrypted vault on your device.
+        </p>
+
+        <h3><span class="no">2</span>Licence</h3>
+        <p>
+          We grant you a personal, non-exclusive, non-transferable, revocable licence to install
+          and use KeyVault on Android devices you own or control, for your own personal (or your
+          household’s) use. You may not sell, rent, or redistribute the app, or misrepresent it as
+          your own product. All rights, title, and interest in and to KeyVault — its software,
+          name, and design — are and remain the exclusive property of Zetro Labs; no rights are
+          granted to you other than the licence in this section. Nothing in these Terms restricts
+          any rights you may have under applicable law.
+        </p>
+
+        <h3><span class="no">3</span>Your master password is your responsibility</h3>
+        <p>This is the most important term in this document:</p>
+        <ul>
+          <li>Your master password is never transmitted to or stored by Zetro Labs. <strong>We cannot reset it, recover it, or unlock your vault — for any reason, including emergencies.</strong></li>
+          <li>If you forget your master password and have not saved an Emergency Access recovery kit, your vault data is permanently unrecoverable. This is a deliberate consequence of the app’s zero-knowledge design, not a defect.</li>
+          <li>You are responsible for choosing a strong master password, keeping it confidential, and storing your recovery kit (if you create one) somewhere safe and private.</li>
+          <li>Anyone who obtains your master password and your device (or a copy of your vault backup) can open your vault. Protect both accordingly.</li>
+        </ul>
+
+        <h3><span class="no">4</span>Backups are your responsibility</h3>
+        <ul>
+          <li>Your vault exists on your device. If your device is lost, stolen, damaged, or reset, your vault goes with it unless you have a backup.</li>
+          <li>KeyVault offers local backup files, automatic local backup, and optional encrypted backup to your own Google Drive. With sync switched on, it can also run automatically. Using them — and keeping at least one current backup — is your responsibility.</li>
+          <li>Backup files are protected by encryption — the same master password that protects your vault; there is no separate backup password. A backup you cannot decrypt is no backup at all.</li>
+          <li>Your use of Google Drive is additionally governed by Google’s terms. We are not responsible for the availability or behaviour of Google Drive.</li>
+        </ul>
+
+        <h3><span class="no">5</span>Acceptable use</h3>
+        <p>You agree to use KeyVault only for lawful purposes. In particular, you must not:</p>
+        <ul>
+          <li>use the app to store or manage credentials you are not authorised to hold;</li>
+          <li>attempt to disrupt, overload, or gain unauthorised access to any third-party service the app interacts with (for example, Google Drive or Have I Been Pwned);</li>
+          <li>use the app in any way that violates applicable law.</li>
+        </ul>
+
+        <h3><span class="no">6</span>Third-party services</h3>
+        <p>
+          Optional features connect to services run by others: Google Drive (backup and sync),
+          Have I Been Pwned (breach checks), Google’s favicon service (the website icons shown in
+          the Add Item website picker, fetched only when you open that picker),
+          and the websites and apps you sign in to with
+          passkeys or Autofill. Those services are provided by their respective operators under
+          their own terms and privacy policies. Zetro Labs does not control them and is not
+          responsible for their content, availability, or accuracy — including the passkey-support
+          information shown in the app, which reflects the listed websites’ support as of the date
+          shown in the app and may change when a website changes.
+        </p>
+
+        <h3><span class="no">7</span>No warranty</h3>
+        <p>
+          KeyVault is provided <strong>“as is” and “as available”</strong>, without warranties of
+          any kind, express or implied, to the maximum extent permitted by law — including
+          warranties of merchantability, fitness for a particular purpose, and non-infringement.
+          We work hard to make KeyVault correct and secure, but no software is perfect: we do not
+          warrant that the app will be error-free, uninterrupted, or that it will detect every
+          weak, reused, or breached password.
+        </p>
+        <p>
+          The Security tab’s score and checks are guidance based on recognised good practice and
+          third-party breach data; they are not a guarantee that an account is safe.
+        </p>
+
+        <h3><span class="no">8</span>Limitation of liability</h3>
+        <p>
+          To the maximum extent permitted by applicable law, Zetro Labs shall not be liable for
+          any indirect, incidental, special, or consequential damages, or for loss of data,
+          passwords, or access to third-party accounts, arising from or related to your use of
+          the app — including loss resulting from a forgotten master password, a lost recovery
+          kit, a lost device, or an unavailable backup. Nothing in these Terms limits liability
+          that cannot be limited under applicable law, including your statutory consumer rights.
+        </p>
+
+        <h3><span class="no">9</span>Eligibility</h3>
+        <p>
+          You must be at least 13 years old (or the minimum age required in your country to use
+          such an app) to use KeyVault. By using the app, you confirm that you meet this
+          requirement.
+        </p>
+
+        <h3><span class="no">10</span>Changes to the app and these Terms</h3>
+        <p>
+          We may update KeyVault and these Terms from time to time — for example, to add
+          features or reflect changes in the law. The current Terms will always be posted on this
+          page with a “Last updated” date. Continuing to use the app after an update takes effect
+          means you accept the revised Terms. If a change materially reduces the app’s privacy
+          protections, we will say so plainly in the release notes.
+        </p>
+
+        <h3><span class="no">11</span>Ending your use</h3>
+        <p>
+          You may stop using KeyVault at any time by erasing your vault (Settings → Danger zone)
+          and uninstalling the app. We may discontinue the app or any feature; if we do, your
+          existing encrypted vault and any backups you hold remain yours, and the app’s offline
+          functionality is not remotely disabled.
+        </p>
+
+        <h3><span class="no">12</span>Governing law</h3>
+        <p>
+          These Terms are governed by the laws of India. Any legal issues or disputes arising
+          from these Terms or from your use of KeyVault will be subject to the jurisdiction of
+          the Indian judiciary — the competent courts of India.
+        </p>
+
+        <h3><span class="no">13</span>Contact</h3>
+        <p>
+          Questions about these Terms can be sent to <strong>Zetro Labs</strong> through the
+          developer contact listed on KeyVault’s Google Play store page.
+        </p>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section class="doc" id="faq">
+        <div class="doc-head">
+          <h2>Frequently Asked Questions</h2>
+          <p>Every tab, option, and section of KeyVault, explained</p>
+        </div>
+
+        <div class="faq-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+          <input type="search" id="faqSearch" placeholder="Search for topics or questions" aria-label="Search the FAQ" autocomplete="off" />
+        </div>
+
+        <div class="faq-tools">
+          <button type="button" id="expandAll">Expand all</button>
+          <button type="button" id="collapseAll">Collapse all</button>
+        </div>
+
+        <p class="faq-noresults" id="faqNoResults" hidden>
+          No results — nothing in the FAQ matches that search. Try different words, or a shorter search.
+        </p>
+
+        <!-- General -->
+        <div class="faq-group">
+          <h3>General</h3>
+          <details class="faq">
+            <summary>What is KeyVault?</summary>
+            <div class="answer">
+              <p>KeyVault is a password manager for Android made by Zetro Labs. It stores your passwords, passkeys, and passcodes in a vault that is encrypted on your phone with a master password only you know. There is no account to create and no server involved — the app works fully offline.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Who created KeyVault, and who owns it?</summary>
+            <div class="answer">
+              <p>KeyVault was created by <strong>Zetro Labs</strong> and is an exclusive product of Zetro Labs. Zetro Labs retains all rights and authority over the app. Any legal issues arising in connection with KeyVault are subject to the jurisdiction of the Indian judiciary (the courts of India).</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Is KeyVault really free of accounts, ads, and tracking?</summary>
+            <div class="answer">
+              <p>Yes. KeyVault has no sign-up, no sign-in, no advertisements, and no analytics or tracking of any kind. Zetro Labs receives nothing from the app — we don’t know who you are or what you store.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How is my vault encrypted?</summary>
+            <div class="answer">
+              <p>Your data is encrypted with AES-256-GCM. The key is derived from your master password using PBKDF2-HMAC-SHA256 with 600,000 iterations, which makes guessing attacks extremely slow and expensive. Your master password itself never leaves your device and is never stored in plain text.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Does KeyVault work without an internet connection?</summary>
+            <div class="answer">
+              <p>Completely. Everything core — unlocking, viewing, adding, generating, settings — works with no connection at all. The internet is used only for features you choose to use — Google Drive backup/sync, breach checks, and opening websites — plus one small fetch: opening the Add Item website picker loads the listed sites’ favicons.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Can Zetro Labs see or recover my passwords?</summary>
+            <div class="answer">
+              <p>No. This is by design (“zero-knowledge”): your data is encrypted with a key derived from your master password, and that password never leaves your phone. We cannot see your passwords, reset your master password, or unlock your vault — for anyone, under any circumstances.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Getting started & unlocking -->
+        <div class="faq-group">
+          <h3>Getting Started &amp; Unlocking</h3>
+          <details class="faq">
+            <summary>How do I set up KeyVault for the first time?</summary>
+            <div class="answer">
+              <p>Open the app and create a master password. Choose something long and memorable that you don’t use anywhere else — a phrase of several words works well. That single password protects everything in your vault. During setup you can also import an existing backup or your Chrome passwords if you have them.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What happens if I forget my master password?</summary>
+            <div class="answer">
+              <p>Without your master password, your vault cannot be opened — and we cannot help, because we never have it. The one exception is <strong>Emergency Access</strong>: if you created a recovery kit beforehand (Settings → Security → Emergency access) and kept it safe, you can use it to get back in, after which you must set a new master password. If you have neither the password nor a recovery kit, the only option is to erase the vault and start over.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Can I unlock with my fingerprint instead of typing?</summary>
+            <div class="answer">
+              <p>Yes. Enable fingerprint unlock in Settings → Security. Your vault key is then protected by the Android Keystore and released when Android verifies your fingerprint. Your fingerprint data never reaches KeyVault — Android handles it entirely. Turning fingerprint unlock on goes through Android’s own fingerprint enrollment.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Why does KeyVault ask for my password again after I’ve been away?</summary>
+            <div class="answer">
+              <p>For your protection. KeyVault always opens on the lock screen first, and when the app goes to the background, decrypted vault data is cleared from memory. So whenever you return, you unlock again. That way, someone picking up your phone can’t walk into an open vault.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Do I have to re-authenticate to change my security settings?</summary>
+            <div class="answer">
+              <p>No — changing security settings does not ask you to re-authenticate first. Turning fingerprint unlock on goes through Android’s own fingerprint enrollment. The one change that always asks for a password is changing your master password, which requires your current one.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Home tab -->
+        <div class="faq-group">
+          <h3>Home Tab</h3>
+          <details class="faq">
+            <summary>What does the Home tab show?</summary>
+            <div class="answer">
+              <p>Home is your at-a-glance dashboard: a search box, a security summary card, quick-add buttons, your Favourites, and your Recently used entries. It’s designed so the things you reach for most are one tap away.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does the security card on Home mean?</summary>
+            <div class="answer">
+              <p>It summarises how many of your passwords are weak or reused. Tap <strong>Review</strong> to open the Security tab, where you can see and fix each issue — including breach alerts.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What do the Quick-add buttons do?</summary>
+            <div class="answer">
+              <p><strong>New password</strong> and <strong>New passcode</strong> open the Add Item screen with that type already selected, so you can save a new entry in seconds.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What are Favourites, and how do I add one?</summary>
+            <div class="answer">
+              <p>Favourites are the entries you pin for fast access — Home shows your first four. To favourite an entry, open it and mark it as a favourite. Tapping a favourite tile on Home opens that entry’s detail screen, just like tapping it in the Vault.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What is “Recently used”?</summary>
+            <div class="answer">
+              <p>It lists the entries and passkeys you most recently added, changed, or used (the first three are shown on Home), so you can get back to them quickly. Tap <strong>See all</strong> to jump to the full Vault list.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does the search box on Home do?</summary>
+            <div class="answer">
+              <p>Typing a search on Home takes you to the Vault tab with that search applied, filtering your entries by title, username, or website address.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does the lock button on Home do?</summary>
+            <div class="answer">
+              <p>It locks KeyVault immediately and returns you to the lock screen — handy when handing your phone to someone else.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Vault tab -->
+        <div class="faq-group">
+          <h3>Vault Tab</h3>
+          <details class="faq">
+            <summary>What is the Vault tab?</summary>
+            <div class="answer">
+              <p>The Vault tab is the complete list of everything you’ve saved — passwords, passkeys, and passcodes — with search, filters, and sorting. It’s where you manage your entries day to day. Passwords and passcodes are entries you add yourself in the app; passkeys cannot be added manually — they are created on websites and apps and registered into KeyVault when you choose KeyVault as the provider.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How does search work in the Vault?</summary>
+            <div class="answer">
+              <p>Search filters the list as you type, matching against each entry’s title, username, and website address. Clear the search to see everything again.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What do the filter chips (All / Passwords / Passkeys / Passcodes) do?</summary>
+            <div class="answer">
+              <p>They narrow the list to one kind of item: <strong>All</strong> shows everything, <strong>Passwords</strong> shows login entries, <strong>Passkeys</strong> shows passkeys, and <strong>Passcodes</strong> shows PINs and codes you’ve stored. Each chip shows how many items it contains.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I sort the Vault list?</summary>
+            <div class="answer">
+              <p>Tap the sort button and a small menu appears next to it with three options: <strong>Name A–Z</strong>, <strong>Name Z–A</strong>, and <strong>Recently updated</strong>. Tap one to apply it — the current choice is marked with a checkmark, and KeyVault remembers your choice between sessions. Tap anywhere outside the menu to close it without changing anything.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Why do letter headings (A, B, C…) appear above some entries?</summary>
+            <div class="answer">
+              <p>When you sort alphabetically (A–Z or Z–A), entries are grouped under their first letter to make scanning easier. Headings are hidden when sorting by “Recently updated”, since letters would be out of order there.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I view, copy, edit, or delete an entry?</summary>
+            <div class="answer">
+              <p>Tap any row to open its detail screen. From there you can reveal or hide the password with the eye toggle, copy the username or password, edit the entry, or delete it. Passwords are hidden by default — reveal them only when you need to.</p>
+              <p>Note: passkeys can’t be edited (a passkey is a cryptographic key pair, not editable text), so the Edit button explains this instead of opening an editor. Passkeys can still be deleted.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I open the website saved with an entry?</summary>
+            <div class="answer">
+              <p>In the entry’s detail view, the <strong>Website</strong> row has an open button that takes you straight to the site in your browser — opening a website needs an internet connection, so if your phone isn’t connected the app will say so. This works for passwords and passcodes with a website saved; for a passkey, the open button takes you to the passkey’s domain.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What is the Two-factor (2FA) secret field?</summary>
+            <div class="answer">
+              <p>Many websites offer two-factor authentication (2FA): after your password, they ask for a 6-digit code that changes every 30 seconds (a TOTP code — the kind authenticator apps show). When a site shows you a setup QR code or setup key, save it in the entry’s Two-factor (2FA) secret field: tap Scan to scan the QR code, or type or paste the key — a pasted <code>otpauth://</code> link works too. The secret is stored encrypted inside your vault, exactly like the password. KeyVault then shows the live code in the entry’s detail view and under the 2FA codes filter at the top of the Vault tab. Codes are computed on your phone and work fully offline; nothing about 2FA ever leaves your device.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Where do I see my 2FA codes?</summary>
+            <div class="answer">
+              <p>Tap the 2FA codes filter at the top of the Vault tab. The list narrows to the entries that have a 2FA secret, and each row shows its current 6-digit code with the seconds left before it changes — the codes refresh on screen as you watch. Tap a row to copy its code; the clipboard clears automatically, just like copied passwords. An entry’s detail view shows its live code too. Because the codes are time-based, keep your phone’s date and time set to automatic — if the clock is off, the codes will not match what the website expects.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What is a passcode entry?</summary>
+            <div class="answer">
+              <p>A passcode is a short code — like a PIN for a card, a locker code, or a door code — stored as its own entry type so it’s easy to find under the Passcodes filter.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Why don’t I see my saved passkey in the Vault?</summary>
+            <div class="answer">
+              <p>Passkeys appear under both <strong>All</strong> and the <strong>Passkeys</strong> filter. If one seems missing, check that the Passkeys filter isn’t hiding other types you expected, and that you’re looking in the same vault you saved it to. Passkeys created through websites (via “Upgrade to passkey”) and passkeys created through Android’s system prompt are both stored in the vault and listed the same way.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Adding items -->
+        <div class="faq-group">
+          <h3>Adding Items</h3>
+          <details class="faq">
+            <summary>How do I add a new item?</summary>
+            <div class="answer">
+              <p>Tap the <strong>+</strong> button on the Vault tab, or a Quick-add button on Home. At the top of the Add Item screen, choose the type — <strong>Password</strong> or <strong>Passcode</strong> — then fill in the details.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What fields does a password entry have?</summary>
+            <div class="answer">
+              <p>Two separate picker buttons — <strong>Website</strong> and <strong>App</strong> — sit above the Name field, and neither is selected until you tap one. Below them are the website address, the title (site or service name), username, and password, plus a <strong>Notes</strong> field and an <strong>Attach file</strong> button. Fill in as much as applies — the website address helps Autofill and the passkey-upgrade matching work better.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What do the Website and App buttons above the Name field do?</summary>
+            <div class="answer">
+              <p>They are two separate buttons, and neither is selected by default — each is selected only when you tap it. Tapping <strong>Website</strong> opens a bottom sheet listing about 52 of the most-used websites worldwide, each with its favicon. Tapping <strong>App</strong> opens a bottom sheet listing every app installed on your phone, in alphabetical order, each with its real app icon. Both sheets have a search box. Tapping an entry fills in the Name and the Website URL automatically — you can still edit them afterwards.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Where do the icons in the Website and App lists come from?</summary>
+            <div class="answer">
+              <p>Website icons are the sites’ own favicons, fetched from Google’s favicon service at the moment you open the website picker. The request asks only for the popular sites’ domain icons — no user data, vault data, or personal information is sent. App icons are read locally from your phone; nothing about your installed apps ever leaves your device. If an icon can’t load, a coloured letter tile is shown instead, so the list always looks complete.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Can I add notes and files to a password or passcode?</summary>
+            <div class="answer">
+              <p>Yes. The Add and Edit forms for passwords and passcodes have a <strong>Notes</strong> field and an <strong>Attach file</strong> button. You can attach any file type, up to 10 MB each. Notes and files are stored encrypted inside your vault on your device — and inside your own encrypted backups or Drive sync if you have those enabled — and are never uploaded anywhere by Zetro Labs. In the entry’s detail view, attached files appear with an Open button.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What fields does a passcode entry have?</summary>
+            <div class="answer">
+              <p>A name, the code itself, and a <strong>Website (optional)</strong> field just below the same Website/App picker buttons, plus a Notes field and an Attach file button. A passcode with a website saved gets the same open-website button in its detail view that passwords have.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does the password strength meter tell me?</summary>
+            <div class="answer">
+              <p>As you type or generate a password, the meter estimates how hard it would be to guess. Longer passwords with a mix of characters — or generated passwords and passphrases — score highest. Treat a low score as a prompt to use the built-in generator.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I add a passkey from the Add Item screen?</summary>
+            <div class="answer">
+              <p>You don’t — passkeys cannot be added manually, and there is no Passkey option on the Add Item screen. A passkey is created on the website or app itself: when it offers “Create a passkey”, choose KeyVault as the provider and the passkey is registered into your vault. For that to work, KeyVault must be enabled under “Auto-fill passwords and passkeys” in your phone’s settings. To turn an existing password login into a passkey, see the Security tab’s “Upgrade to passkey”.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Generator tab -->
+        <div class="faq-group">
+          <h3>Generator Tab</h3>
+          <details class="faq">
+            <summary>What does the Generator do?</summary>
+            <div class="answer">
+              <p>It creates strong, random credentials so you never have to invent passwords yourself. It has three modes — <strong>Password</strong>, <strong>Passphrase</strong>, and <strong>PIN</strong> — switchable at the top of the screen.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How does Password mode work?</summary>
+            <div class="answer">
+              <p>Drag the slider to set the length (minimum 6 characters) and KeyVault generates a random password. Longer is stronger — 16 or more characters is a good default for important accounts.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How does Passphrase mode work?</summary>
+            <div class="answer">
+              <p>Passphrase mode builds a password from random words, which is long, strong, and much easier to type and remember than random characters. Drag the slider to set the number of words (minimum 6).</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How does PIN mode work?</summary>
+            <div class="answer">
+              <p>PIN mode generates a random numeric code. Drag the slider to set the number of digits (minimum 4). Use it for passcode entries where a site or device only accepts digits.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What can I do with a generated password?</summary>
+            <div class="answer">
+              <p>Tap to regenerate for a new one, copy it to the clipboard, or save it straight into your vault as a new entry. If you copy it, KeyVault clears the clipboard automatically after the time set in Settings → Security → Clipboard clear.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Are generated passwords truly random?</summary>
+            <div class="answer">
+              <p>Yes — they are produced with your device’s cryptographically secure random number generator, the same class of randomness used by the encryption itself. Nothing is sent anywhere or derived from anything about you.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Security tab -->
+        <div class="faq-group">
+          <h3>Security Tab</h3>
+          <details class="faq">
+            <summary>What does the Security tab do?</summary>
+            <div class="answer">
+              <p>The Security tab analyses your whole vault and tells you what needs attention: an overall score, counts of weak and reused passwords, breach alerts, and the option to upgrade logins to passkeys. The “Needs attention” list shows each weak or reused password — with a reason — and <strong>Fix</strong> buttons that open the entry directly. Breached passwords are flagged separately, with a warning at the top of the entry’s detail view.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How is the security score calculated?</summary>
+            <div class="answer">
+              <p>The ring shows a score out of 100 based on the health of your passwords — it is reduced by weak passwords and reused passwords, and fixing the flagged entries raises it. Passwords found in breaches are flagged separately under Breach alerts and don’t change the score. The ring stays visible even at a perfect 100/100, so you can always see your standing at a glance.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What counts as a “weak” password?</summary>
+            <div class="answer">
+              <p>Passwords that would be easy to guess: too short, made of common words or patterns, or lacking variety. The fix is to open the entry, replace the password with a generated one, and update it on the website too.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Why is reusing passwords dangerous?</summary>
+            <div class="answer">
+              <p>If one website leaks a password you’ve reused, attackers try that same password on your other accounts (“credential stuffing”). KeyVault flags every password used in more than one place so you can give each account its own generated password.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do Breach alerts work? Is my password sent anywhere?</summary>
+            <div class="answer">
+              <p>Tap <strong>Breach alerts</strong> to check your passwords against known data breaches via Have I Been Pwned. It uses k-anonymity: your password is hashed on your device and only the <strong>first 5 characters of the hash</strong> are sent — your password and its full hash never leave your phone, and the service cannot identify you. The check needs an internet connection. Note that the service reports how many times a password has appeared in breaches, but by design it cannot say which company leaked it.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What is “Upgrade to passkey”?</summary>
+            <div class="answer">
+              <p>It lists your saved logins for websites that support passkeys, so you can replace passwords with a stronger, phishing-resistant sign-in. Tap a site to open its detail screen with step-by-step guidance, then tap <strong>Open site</strong> to create the passkey on the website in your browser.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Why does “Upgrade to passkey” show a note about the list’s date?</summary>
+            <div class="answer">
+              <p>The list of which websites support passkeys is bundled with the app and labelled with the date it was last verified (“Passkey support data as of…”). Websites add passkey support over time, so the list is refreshed with app updates. If a listed site has changed its process, the site’s own instructions win.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What happens after I create a passkey on the website?</summary>
+            <div class="answer">
+              <p>Come back to KeyVault and unlock it. KeyVault then checks whether a new passkey was saved for that site: if yes, you’ll see “Passkey saved”. If not, it asks “Did you create a passkey?” — tap <strong>Yes</strong> if you did (for example, if you saved it in another app) or <strong>No</strong> to leave the login unchanged. The check expires after about an hour, so a forgotten upgrade never pops up confusingly later.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does “Keep password as backup” mean?</summary>
+            <div class="answer">
+              <p>After upgrading a login to a passkey, you can keep the saved password as a fallback or remove it. Turning the option <strong>off</strong> first shows a warning: “Before turning off backup, ensure that the passkey is registered in KeyVault or another app.” Choose <strong>Cancel</strong> to keep things as they are, or <strong>Continue</strong> if you’re sure the passkey works — otherwise you could lock yourself out of that account.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Settings: appearance -->
+        <div class="faq-group">
+          <h3>Settings — Appearance</h3>
+          <details class="faq">
+            <summary>What does Mode (Light / Dark) do?</summary>
+            <div class="answer">
+              <p>It switches the whole app between the Light and Dark colour schemes. Your choice is saved and applied everywhere, including the lock screen.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does the Theme picker change?</summary>
+            <div class="answer">
+              <p>KeyVault includes 15 colour themes that restyle the app’s accent colours. Pick one in Settings → Appearance → Theme and it applies immediately and is remembered.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does the Font picker change?</summary>
+            <div class="answer">
+              <p>It changes the typeface used across the app — 16 fonts are included. The choice is applied everywhere and saved for your next session.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Settings: security -->
+        <div class="faq-group">
+          <h3>Settings — Security</h3>
+          <details class="faq">
+            <summary>How do I change my master password?</summary>
+            <div class="answer">
+              <p>Go to Settings → Security → Change password. You’ll confirm your current password and set a new one; your vault is re-encrypted with it. Your backups made under the old password still need the old password to open, so make a fresh backup afterwards.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What is Emergency access?</summary>
+            <div class="answer">
+              <p>Emergency access creates a <strong>recovery kit</strong>: a 256-bit recovery key shown once, as a 58-character code and a QR code. Save it somewhere safe and private (printed paper in a secure place is ideal). If you ever forget your master password, the kit is the only way back in — using it starts a one-time session that requires you to set a new master password. The kit is powerful: anyone who has it and your vault can get in, so guard it like the passwords themselves. A copy of the recovery wrap travels inside your backups so a restored backup can still be recovered with the same kit.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How does the Fingerprint setting work?</summary>
+            <div class="answer">
+              <p>Turning it on goes through Android’s own fingerprint enrollment, and your vault key is then protected by the Android Keystore. Turning it off removes that biometric unlock, and you’ll unlock with your master password instead.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does “Clipboard clear” do?</summary>
+            <div class="answer">
+              <p>When you copy a password, it sits in the clipboard where other apps could read it. This setting chooses how many seconds KeyVault waits before automatically clearing the clipboard after any copy. Shorter is safer; the value you pick is saved and applies to every copy action in the app.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does “Password health” open?</summary>
+            <div class="answer">
+              <p>It takes you straight to the Security tab, where your score, weak and reused password counts, and breach alerts live.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does the Autofill setting do?</summary>
+            <div class="answer">
+              <p>It shows whether KeyVault is currently set as your device’s Autofill service. Tapping it opens Android’s settings so you can enable KeyVault as the Autofill provider — after that, Android can offer your saved logins in other apps and browsers. Filling always happens on your device; nothing is sent anywhere.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Settings: backup on this phone -->
+        <div class="faq-group">
+          <h3>Settings — Backup on This Phone</h3>
+          <details class="faq">
+            <summary>What does “Export backup” do?</summary>
+            <div class="answer">
+              <p>It writes an encrypted backup file of your entire vault that you can save wherever you like. The file is protected by your master password — the same encryption as the vault itself; there is no separate backup password, and you’ll need your master password to import it later. Store the file somewhere safe; without your master password it cannot be opened.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What does “Auto backup” do?</summary>
+            <div class="answer">
+              <p>Auto backup automatically keeps a local backup of your vault on your phone (in the Download/KeyVault folder) on the schedule you pick — <strong>Off</strong>, <strong>Daily</strong>, or <strong>Weekly</strong>. If your vault data is ever lost from the app, KeyVault can automatically restore from this backup. It’s a safety net for your device itself — it does not protect against losing the phone, so pair it with an exported or Drive backup.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I import a backup?</summary>
+            <div class="answer">
+              <p>Settings → Backup → Import backup. There is no file to pick: KeyVault restores the most recent backup in your Download/KeyVault folder automatically. Just enter the master password that backup was made with, and KeyVault decrypts and restores it on your device.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I import my passwords from Google Chrome?</summary>
+            <div class="answer">
+              <p>First export your passwords from Chrome as a CSV file (Chrome → Settings → Password Manager → Export). Then in KeyVault go to Settings → Backup → Chrome import, pick the CSV file, and KeyVault imports the entries, skipping duplicates you already have. The CSV file is <em>not</em> encrypted — delete it from your phone once the import is done.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What is the version line at the bottom of Settings?</summary>
+            <div class="answer">
+              <p>It shows the exact KeyVault version installed on your phone (for example, “KeyVault 2.2.3”) — useful when checking whether you have the latest update.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Settings: Drive -->
+        <div class="faq-group">
+          <h3>Settings — Google Drive</h3>
+          <details class="faq">
+            <summary>How does Google Drive backup work?</summary>
+            <div class="answer">
+              <p>If you link your Google account, KeyVault can keep an encrypted copy of your vault in your Drive’s hidden app-data folder (the <code>drive.appdata</code> scope — KeyVault cannot see any of your other Drive files). The vault is encrypted on your phone before upload, so the backup on Drive is unreadable to Google and to us; only your master password opens it.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I link or unlink Google Drive?</summary>
+            <div class="answer">
+              <p>Settings → Google Drive → Link. Linking needs an internet connection. Sign in with Google’s own flow. To unlink, tap Unlink in the same place; unlinking stops all Drive activity but does not delete a backup already stored in Drive (delete that from your Google Drive settings if you want it gone).</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What do “Back up now”, “Restore”, and “Sync now” each do?</summary>
+            <div class="answer">
+              <p><strong>Back up now</strong> uploads your current encrypted vault to Drive. <strong>Restore</strong> downloads the Drive backup and replaces your local vault with it. <strong>Sync now</strong> merges both ways so the newest version of each entry wins — use it when you use KeyVault on more than one phone. Each one needs your phone to be connected to the internet.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Is my Drive backup safe if someone accesses my Google account?</summary>
+            <div class="answer">
+              <p>The backup file itself is encrypted with your vault’s encryption, so having the file is not enough — they would also need your master password. Even so, keep your Google account secured with a strong password and two-step verification.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Settings: danger zone -->
+        <div class="faq-group">
+          <h3>Settings — Danger Zone</h3>
+          <details class="faq">
+            <summary>What does “Erase everything” do?</summary>
+            <div class="answer">
+              <p>It permanently deletes your vault from this phone. Because this cannot be undone, it asks twice — the button changes to “Tap again to confirm” before anything is deleted. Erasing removes the local vault; if you kept backups (an exported file, the auto-backup folder, or Google Drive), those copies still exist until you delete them separately. Erase is the right step before selling or giving away your phone — after also deleting your backups.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Passkeys -->
+        <div class="faq-group">
+          <h3>Passkeys</h3>
+          <details class="faq">
+            <summary>What is a passkey, and why is it better than a password?</summary>
+            <div class="answer">
+              <p>A passkey is a cryptographic key pair created for one website. The website keeps the public half; the private half stays in your vault and never leaves your device. Signing in proves you hold the private key — there’s nothing to type, nothing to phish, and nothing a data breach at the website can leak about you. You confirm sign-ins with your fingerprint or device unlock.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>What do I need to use passkeys with KeyVault?</summary>
+            <div class="answer">
+              <p>Android 14 or later, and KeyVault selected as your passkey provider in Android’s settings (Passwords, passkeys &amp; autofill). Creating or using a passkey always requires unlocking KeyVault first.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>How do I sign in with a passkey KeyVault holds?</summary>
+            <div class="answer">
+              <p>On the website or app’s sign-in screen, choose the passkey option. Android shows its credential picker; pick the KeyVault entry, unlock, and you’re in — no password typed anywhere.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Can I add a note or a file to a passkey I’ve already saved?</summary>
+            <div class="answer">
+              <p>Yes — without editing the passkey itself (a passkey can’t be edited). Open the passkey’s detail view and use the <strong>Add note / Edit note</strong> and <strong>Attach file</strong> actions there. No full edit is needed. The note and files are stored encrypted in your vault, tied to that passkey, and they travel with your encrypted backups and sync like everything else.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>If I clear KeyVault from my recent apps mid-upgrade, is my passkey upgrade lost?</summary>
+            <div class="answer">
+              <p>No. The pending upgrade is saved on your phone, not just in memory. Reopen KeyVault, unlock, and it picks up where you left off — checking for the new passkey and showing “Passkey saved” or asking whether you created one. Only the on-screen position resets, and the check quietly expires after an hour.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="faq-group">
+          <h3>Troubleshooting</h3>
+          <details class="faq">
+            <summary>KeyVault shows the lock screen every time I return to it. Is that normal?</summary>
+            <div class="answer">
+              <p>Yes — that’s the design. KeyVault always starts locked, and backgrounding the app clears decrypted data from memory. Unlock with your fingerprint or master password and everything is exactly where you left it — your last tab is even restored.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Linking Google Drive or running a breach check fails immediately. Why?</summary>
+            <div class="answer">
+              <p>These features need the internet, so check that your phone is connected and try again. If you’re not connected, the feature itself will tell you it needs the internet.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>A website doesn’t offer me passkey sign-in even though I saved one.</summary>
+            <div class="answer">
+              <p>Check that KeyVault is selected as the passkey provider in Android’s settings and that you’re on Android 14 or later. Some websites only offer passkeys in certain browsers or regions — in that case, keep the password as backup (that’s exactly what the option is for).</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>I got a new phone. How do I move my vault?</summary>
+            <div class="answer">
+              <p>On the old phone, either export a backup file or back up to Google Drive. On the new phone, install KeyVault, then import the backup file during setup or from Settings → Backup, or link Drive and use Restore/Sync. Enter your master password and everything — including passkey records and your emergency-access recovery wrap — comes across.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>I erased my vault by accident. Can I get it back?</summary>
+            <div class="answer">
+              <p>Only from a backup. If Auto backup was on, KeyVault may be able to restore automatically from the Download/KeyVault folder. Otherwise, import an exported backup file or restore from Google Drive if you linked it. Without any backup, erased data is gone — that permanence is what makes “Erase everything” a real protection.</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>Where can I ask a question that isn’t answered here?</summary>
+            <div class="answer">
+              <p>Reach Zetro Labs through the developer contact on KeyVault’s Google Play listing. Please don’t ever send your master password, recovery kit, or backup files to anyone — including us. We will never ask for them.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="brand-line">KeyVault by Zetro Labs</p>
+        <p>Privacy Policy, Terms &amp; Conditions, and FAQ for KeyVault for Android (com.zetrolabs.keyvault), version 2.2.3.</p>
+        <p>Effective 20 October 2026. This page is the canonical, current version of these documents.</p>
+        <p>KeyVault is an exclusive product of Zetro Labs; Zetro Labs retains all rights and authority over the app. Any legal issues are subject to the jurisdiction of the courts of India.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        // Expand / collapse all FAQ entries
+        var all = function () { return Array.prototype.slice.call(document.querySelectorAll("details.faq")); };
+        document.getElementById("expandAll").addEventListener("click", function () {
+          all().forEach(function (d) { d.open = true; });
+        });
+        document.getElementById("collapseAll").addEventListener("click", function () {
+          all().forEach(function (d) { d.open = false; });
+        });
+
+        // FAQ search: live filter over question and answer text
+        var searchInput = document.getElementById("faqSearch");
+        var noResults = document.getElementById("faqNoResults");
+        var faqItems = all();
+        var faqGroups = Array.prototype.slice.call(document.querySelectorAll("#faq .faq-group"));
+        var faqText = faqItems.map(function (d) { return (d.textContent || "").toLowerCase(); });
+        function applyFaqFilter() {
+          var words = searchInput.value.toLowerCase().split(/\s+/).filter(function (w) { return w.length > 0; });
+          if (words.length === 0) {
+            faqItems.forEach(function (d) { d.hidden = false; d.open = false; });
+            faqGroups.forEach(function (g) { g.hidden = false; });
+            noResults.hidden = true;
+            return;
+          }
+          var visible = 0;
+          faqItems.forEach(function (d, i) {
+            var match = words.every(function (w) { return faqText[i].indexOf(w) !== -1; });
+            d.hidden = !match;
+            if (match) { d.open = true; visible += 1; }
+          });
+          faqGroups.forEach(function (g) {
+            g.hidden = !g.querySelector("details.faq:not([hidden])");
+          });
+          noResults.hidden = visible !== 0;
+        }
+        searchInput.addEventListener("input", applyFaqFilter);
+
+        // Scrollspy for the section nav
+        var links = {};
+        Array.prototype.forEach.call(document.querySelectorAll(".section-nav a[data-spy]"), function (a) {
+          links[a.getAttribute("data-spy")] = a;
+        });
+        var sections = ["privacy", "terms", "faq"].map(function (id) { return document.getElementById(id); });
+        function onScroll() {
+          var pos = window.scrollY + 140;
+          var current = sections[0];
+          sections.forEach(function (s) { if (s && s.offsetTop <= pos) current = s; });
+          Object.keys(links).forEach(function (k) { links[k].classList.remove("active"); });
+          if (current && links[current.id]) links[current.id].classList.add("active");
+        }
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+      })();
+    </script>
+  </body>
+</html>
